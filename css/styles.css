@@ -22,9 +22,10 @@
 }
 
 .small-description {
-    font: 24px 'brother-1816', sans-serif;
-    color: black;
-    margin-bottom: 8%;
+    font: 16px 'novocento-sans-narrow', sans-serif;
+    color: red;
+    font-weight: bold;
+    text-align: left;
 }
 
 .text-box{
