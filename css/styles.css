@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background-color: #F9F7EA;
+}
+
+.navbar-default {
+    box-shadow: none;
+}
+
+.main-image {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.main-image-mobile {
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
+
+.small-description {
+    font: 24px 'brother-1816', sans-serif;
+    color: black;
+    margin-bottom: 8%;
+}
+
+.text-box{
+    font-size: 100px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.ticker-wrap {
+    background-color: white;
+    position: absolute;
+}
+.wrapper {
+    background-color: white;
+}
+span {
+    font-weight: bolder;
+}
+
+.ticker1{
+    position: absolute;
+    z-index: 10;
+    animation: mover 20s linear infinite;
+}
+
+.ticker2{
+    position: absolute;
+    z-index: 10;
+    animation: mover2 20s linear infinite;
+}
+
+.ticker3{
+    position: absolute;
+    z-index: 10;
+    animation: mover3 20s linear infinite;
+}
+
+
+.ticker_image {
+    width: 800px;
+}
+
+@keyframes mover
+{
+    0%{
+        transform: translate3d(0%,0,0);
+      }
+    25%{
+        transform: translate3d(25%,0,0);
+      }
+    50%{
+        transform: translate3d(50%,0,0);
+      }
+    75% {
+        transform: translate3d(75%,0,0);
+    }
+    100%
+      {
+        transform: translate3d(100%,0,0);
+      }
+}
+
+@keyframes mover2 
+{
+    0%{
+        transform: translate3d(-100%,0,0);
+      }
+    25%{
+        transform: translate3d(-75%,0,0);
+      }
+    50%{
+        transform: translate3d(-50%,0,0);
+      }
+    75% {
+        transform: translate3d(-25%,0,0);
+    }
+    100%
+      {
+        transform: translate3d(0%,0,0);
+      }
+}
+
+@keyframes mover3
+{
+    0%{
+        transform: translate3d(100%,0,0);
+      }
+    25%{
+        transform: translate3d(125%,0,0);
+      }
+    50%{
+        transform: translate3d(150%,0,0);
+      }
+    75% {
+        transform: translate3d(175%,0,0);
+    }
+    100%
+      {
+        transform: translate3d(200%,0,0);
+      }
+}
+
+.mobile_device_380px {
+    display: none;
+}
+.mobile_device_480px {
+    display: none;
+}
+
+/* if mobile device max width 380px */
+@media only screen and (max-device-width: 380px) {
+    .mobile_device_380px{display: block;}       
+    .desktop {display: none;}
+} 
+
+/* if mobile device max width 480px */
+@media only screen and (max-device-width: 480px) {
+    .mobile_device_480px{display: block;}
+    .desktop {display: none;}
+}
